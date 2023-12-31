@@ -55,15 +55,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Get Theme
-        run: |
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
-          git submodule update --init --recursive
-          git submodule sync --recursive
-          cd themes/PaperMod
-          git fetch
-          git merge origin/master --allow-unrelated-histories
-        # run: git submodule update --remote --merge
+        run: git submodule update --remote --merge --allow-unrelated-histories
       - name: Build with Hugo
         run: |
           hugo \
