@@ -1,5 +1,5 @@
 baseURL: "https://oliverlabs.github.io/"
-title: ExampleSite
+title: oliverlabs blog
 paginate: 5
 theme: PaperMod
 
@@ -30,17 +30,17 @@ params:
   ShowShareButtons: true
   socialIcons:
     - name: "kofi"
-      title: "<custom title>"
-      url: "https://kofi.com"
+      title: "Buy me a coffee"
+      url: "ko-fi.com/olivergulich"
     - name: "x"
-      title: "<custom title>"
-      url: "https://twitter.com"
+      title: "X (Twitter)"
+      url: "https://twitter.com/mattsonster"
     - name: "linkedin"
       title: "Oliver Gulich LinkedIn"
-      url: "https://linkedin.com"
+      url: "https://www.linkedin.com/in/olivergulich/"
     - name: "GitHub"
       title: "Oliver Gulich GitHub"
-      url: "https://github.com"
+      url: "https://github.com/oliverlabs"
   UseHugoToc: true
   ShareButtons: ["linkedin", "x"] # To customize which share buttons to be enabled on page
   ShowPostNavLinks: true
