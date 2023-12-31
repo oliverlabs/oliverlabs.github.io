@@ -59,7 +59,11 @@ jobs:
           git submodule update --init --recursive
           git submodule sync --recursive
       - name: Update theme to Latest commit
-        run: git submodule update --remote --merge
+        run: |
+          cd themes/PaperMod
+          git fetch
+          git merge origin/master --allow-unrelated-histories
+        # run: git submodule update --remote --merge
       - name: Build with Hugo
         run: |
           hugo \
