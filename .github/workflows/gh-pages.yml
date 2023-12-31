@@ -60,6 +60,8 @@ jobs:
           git submodule sync --recursive
       - name: Update theme to Latest commit
         run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
           cd themes/PaperMod
           git fetch
           git merge origin/master --allow-unrelated-histories
