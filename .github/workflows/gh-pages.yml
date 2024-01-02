@@ -3,6 +3,7 @@ name: Deploy Hugo PaperMod Demo to Pages
 on:
   push:
     paths-ignore:
+      - .devcontainer/**
       - "images/**"
       - "LICENSE"
       - "README.md"
