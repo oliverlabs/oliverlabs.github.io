@@ -4,20 +4,25 @@
     data-loading="lazy" crossorigin="anonymous" async>
     </script>
 
-<script async>
-    // set theme based on localStorage pref-theme
-    document.querySelector("div.giscus_comments > script").setAttribute('data-theme', localStorage.getItem('pref-theme') ? localStorage.getItem('pref-theme') : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'transparent_dark' : 'light'))
-    // change theme on theme toggle click
-    document.querySelector('#theme-toggle').addEventListener('click', () => {
-        let g = document.querySelector('iframe.giscus-frame')
-        if (g) {
-            g.contentWindow.postMessage({
-                giscus: {
-                    setConfig: {
-                        theme: localStorage.getItem('pref-theme') ? ((localStorage.getItem('pref-theme') === 'dark') ? 'light' : 'transparent_dark') : (document.body.className.includes("dark") ? 'light' : 'transparent_dark')
-                    }
+<script>
+    changeGiscusTheme() {
+            let modeToggle = new ModeToggle();
+            const theme = modeToggle.mode === 'dark' ? 'dark' : 'light'
+            function sendMessage(message) {
+                const iframe = document.querySelector('iframe.giscus-frame');
+                if (!iframe) return;
+                iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+            sendMessage({
+                setConfig: {
+                    theme: theme
                 }
-            }, 'https://giscus.app');
+            });
         }
-    })
-</script>
+
+        const modeToggle = document.getElementsByClassName("mode-toggle")[0];
+
+        if (typeof modeToggle !== "undefined") {
+            modeToggle.addEventListener('click', changeGiscusTheme);
+        }
+</script> 
