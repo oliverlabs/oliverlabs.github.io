@@ -8,7 +8,7 @@ This repository hosts the source code for my personal blog. It is powered by [Hu
 
 You can access the website at: https://oliverlabs.co.uk/.
 
-## Usage Instructions
+## :book: Usage Instructions
 
 Before proceeding please ensure you have installed [Hugo](https://gohugo.io/). You can use GitHub Codespaces or the devcontainer with Docker and VSCode to get started. 
 
@@ -39,7 +39,7 @@ Once setup, run the following commands from the root repository folder:
 
 Website should be accessible from: [http://localhost:1313](http://localhost:1313/)
 
-## How To Use This Repo For Your Own Website
+## :hammer_and_wrench: How To Use This Repo For Your Own Website
 
 1. Fork this repo
 1. Edit the `config.yml` file and enter your preferred parameters
@@ -48,7 +48,7 @@ Website should be accessible from: [http://localhost:1313](http://localhost:1313
 1. Your site should be available at `https://$USERNAME.github.io/`.
 
 
-## License
+## :copyright: License
 This project is licensed under the GPL-3.0 license. See the file [`LICENSE`](https://github.com/MrArkon/mrarkon.github.io/blob/master/LICENSE) for more information. 
 If you plan to use any part of this source code in your website/portfolio, I would be really grateful if you include some form of credit somewhere. 
 
