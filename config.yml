@@ -66,7 +66,7 @@ params:
 
   label:
     text: "oliverlabs blog"
-    icon: /apple-touch-icon.png
+    icon: ./static/apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
