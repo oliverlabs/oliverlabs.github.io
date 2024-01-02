@@ -8,6 +8,6 @@ tags:
 
 I found a great post on Hugo and Papermod, explaining the structure and setup of the theme. It can be found here: <https://jessewei.dev/blog/2023/papermod/>.
 
-Additionally, there's a decent YouTube video outlining Hugo usage: { < youtube hjD9jTi_DQ4 >}
+Additionally, there's a decent YouTube video outlining Hugo usage: {{< youtube hjD9jTi_DQ4 >}}
 
 That's it for now.
