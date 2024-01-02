@@ -47,6 +47,35 @@ Website should be accessible from: [http://localhost:1313](http://localhost:1313
 1. Go to _"Actions"_, rerun the failed workflow
 1. Your site should be available at `https://$USERNAME.github.io/`.
 
+## :building_construction: Folder Structure
+
+```bash
+.
+├── archetypes
+│   └── default.md
+├── config.yml                   # Site-wide configuration file
+├── content
+│   ├── archive.md
+│   ├── posts                    # All blog posts
+│   │   ├── [].md
+│   │   ├── [].md
+│   │   ├── [].md
+│   │   └── [].md
+│   ├── search.md
+│   └── tags
+│       └── _index.md
+├── LICENCE
+├── README.md
+├── static                    # Images, favicons, etc.
+│   ├── apple-touch-icon.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── logo_outlined_6.png
+│   └── safari-pinned-tab.svg
+└── themes
+    └── PaperMod
+```
 
 ## :copyright: License
 This project is licensed under the GPL-3.0 license. See the file [`LICENSE`](https://github.com/MrArkon/mrarkon.github.io/blob/master/LICENSE) for more information. 
