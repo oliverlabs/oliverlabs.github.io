@@ -1,4 +1,5 @@
 baseURL: "https://oliverlabs.co.uk/"
+languageCode: en-gb
 title: oliverlabs blog
 paginate: 5
 theme: PaperMod
@@ -19,15 +20,16 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: oliverlabs blog
   description: "This is my blog"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Oliver Gulich, Blog, Portfolio, PaperMod, Azure]
   author: Oliver Gulich
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["./static/logo_outlined_6.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light
   disableThemeToggle: false
   ShowReadingTime: true
   ShowShareButtons: true
+  ShowBreadCrumbs: true
   socialIcons:
     - name: "kofi"
       title: "Buy me a coffee"
@@ -44,7 +46,6 @@ params:
   UseHugoToc: true
   ShareButtons: ["linkedin", "x"] # To customize which share buttons to be enabled on page
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
@@ -58,11 +59,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "./static/favicon.ico"
+    favicon16x16: "./static/favicon-16x16.ico"
+    favicon32x32: "./static/favicon-32x32.ico"
+    apple_touch_icon: "./static/apple-touch-icon.png"
+    safari_pinned_tab: "./static/safari-pinned-tab.svg"
 
   label:
     text: "oliverlabs blog"
@@ -91,7 +92,7 @@ params:
 
     socialIcons:
       - name: "kofi"
-        title: "<custom title>"
+        title: "Buy me a coffee"
         url: "https://kofi.com"
       - name: "x"
         title: "<custom title>"
