@@ -59,11 +59,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "./static/favicon.ico"
-    favicon16x16: "./static/favicon-16x16.ico"
-    favicon32x32: "./static/favicon-32x32.ico"
-    apple_touch_icon: "./static/apple-touch-icon.png"
-    safari_pinned_tab: "./static/safari-pinned-tab.svg"
+    # favicon: "./static/favicon.ico"
+    # favicon16x16: "./static/favicon-16x16.ico"
+    # favicon32x32: "./static/favicon-32x32.ico"
+    # apple_touch_icon: "./static/apple-touch-icon.png"
+    # safari_pinned_tab: "./static/safari-pinned-tab.svg"
 
   label:
     text: "oliverlabs blog"
