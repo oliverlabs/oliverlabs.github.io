@@ -23,7 +23,7 @@ params:
   keywords: [Oliver Gulich, Blog, Portfolio, PaperMod, Azure]
   author: Oliver Gulich
   # author: ["Me", "You"] # multiple authors
-  images: ["/logo_outlined_6.png"]
+  images: "/logo_outlined_6.png"
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light
   disableThemeToggle: false
@@ -31,18 +31,18 @@ params:
   ShowShareButtons: true
   ShowBreadCrumbs: true
   socialIcons:
-    - name: "kofi"
-      title: "Buy me a coffee"
-      url: "https://ko-fi.com/olivergulich"
-    - name: "x"
-      title: "X (Twitter)"
-      url: "https://twitter.com/mattsonster"
-    - name: "linkedin"
-      title: "Oliver Gulich LinkedIn"
-      url: "https://www.linkedin.com/in/olivergulich/"
     - name: "GitHub"
       title: "Oliver Gulich GitHub"
       url: "https://github.com/oliverlabs"
+    - name: "linkedin"
+      title: "Oliver Gulich LinkedIn"
+      url: "https://www.linkedin.com/in/olivergulich/"
+    - name: "x"
+      title: "X (Twitter)"
+      url: "https://twitter.com/mattsonster"
+    - name: "kofi"
+      title: "Buy me a coffee"
+      url: "https://ko-fi.com/olivergulich"
   UseHugoToc: true
   ShareButtons: ["linkedin", "x"] # To customize which share buttons to be enabled on page
   ShowPostNavLinks: true
