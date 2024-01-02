@@ -1,7 +1,7 @@
 ---
 title: 'Overview of Hugo and Papermod'
 date: '2024-01-02T12:28:30Z'
-draft: true
+draft: false
 tags:
 - Blogging
 ---
