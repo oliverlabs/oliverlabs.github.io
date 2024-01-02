@@ -23,7 +23,7 @@ params:
   keywords: [Oliver Gulich, Blog, Portfolio, PaperMod, Azure]
   author: Oliver Gulich
   # author: ["Me", "You"] # multiple authors
-  images: './static/logo_outlined_6.png'
+  images: 'logo_outlined_6.png'
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light
   disableThemeToggle: false
@@ -60,14 +60,14 @@ params:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: favicon.ico
-    favicon16x16: /favicon-16x16.ico
-    favicon32x32: /favicon-32x32.ico
-    apple_touch_icon: /apple-touch-icon.png
-    safari_pinned_tab: /safari-pinned-tab.svg
+    favicon16x16: '/favicon-16x16.ico'
+    favicon32x32: '/favicon-32x32.ico'
+    apple_touch_icon: '/apple-touch-icon.png'
+    safari_pinned_tab: '/safari-pinned-tab.svg'
 
   label:
     text: "oliverlabs blog"
-    icon: ./static/apple-touch-icon.png
+    icon: '/apple-touch-icon.png'
     iconHeight: 35
 
   # profile-mode
