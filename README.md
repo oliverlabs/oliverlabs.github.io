@@ -12,6 +12,8 @@ You can access the website at: https://oliverlabs.co.uk/.
 
 Before proceeding please ensure you have installed [Hugo](https://gohugo.io/). You can use GitHub Codespaces or the devcontainer with Docker and VSCode to get started. 
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/oliverlabs/oliverlabs.github.io)
+
 Requirements: 
 - NodeJS (v20) 
 - Hugo (v0.120.4)

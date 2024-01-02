@@ -23,7 +23,7 @@ params:
   keywords: [Oliver Gulich, Blog, Portfolio, PaperMod, Azure]
   author: Oliver Gulich
   # author: ["Me", "You"] # multiple authors
-  images: "/logo_outlined_6.png"
+  images: './static/logo_outlined_6.png'
   DateFormat: "January 2, 2006"
   defaultTheme: dark # dark, light
   disableThemeToggle: false
