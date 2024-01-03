@@ -180,3 +180,6 @@ body .gist .pl-mdh,
 body .gist .pl-mdi {
     color: #df6b75;
 }
+body .gist .gist-meta {
+    display: none;
+}
