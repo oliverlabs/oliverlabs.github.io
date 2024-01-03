@@ -50,23 +50,33 @@ Website should be accessible from: [http://localhost:1313](http://localhost:1313
 ## :building_construction: Folder Structure
 
 ```bash
+
 .
 ├── archetypes
 │   └── default.md
+├── assets
+│   └── css
+│       └── extended
+│           └── custom.css
 ├── config.yml                   # Site-wide configuration file
 ├── content
 │   ├── archive.md
 │   ├── posts                    # All blog posts
-│   │   ├── [].md
-│   │   ├── [].md
-│   │   ├── [].md
-│   │   └── [].md
+│   │   ├── 2024-01-01.md
+│   │   ├── 2024-01-02.md
+│   │   ├── 2024-01-03.md
+│   │   ├── first.md
+│   │   └── test.md
 │   ├── search.md
 │   └── tags
 │       └── _index.md
+├── layouts
+│   └── partials
+│       ├── comments.html
+│       └── header.html
 ├── LICENCE
 ├── README.md
-├── static                    # Images, favicons, etc.
+├── static                       # Images, favicons, etc.
 │   ├── apple-touch-icon.png
 │   ├── favicon-16x16.png
 │   ├── favicon-32x32.png
