@@ -4,6 +4,7 @@ on:
   push:
     paths-ignore:
       - .devcontainer/**
+      - .github/
       - "images/**"
       - "LICENSE"
       - "README.md"
