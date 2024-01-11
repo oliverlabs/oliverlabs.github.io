@@ -183,3 +183,37 @@ body .gist .pl-mdi {
 body .gist .gist-meta {
     display: none;
 }
+
+/* Trying out the Hugo Notice Dark Scheme */
+
+.notice {
+    --root-color: #000;
+    --root-background: #e7f2fa;
+    --title-color: #fff;
+    --title-background: #6ab0de;
+    --warning-title: rgba(217, 83, 79, 0.9);
+    --warning-content: #fae2e2;
+    --info-title: #f0b37e;
+    --info-content: #fff2db;
+    --note-title: #6ab0de;
+    --note-content: #e7f2fa;
+    --tip-title: rgba(92, 184, 92, 0.8);
+    --tip-content: #e6f9e6;
+}
+body.dark .notice {
+    --root-color: #fff;
+    --root-background: #e7f2fa;
+    --title-color: #fff;
+    --title-background: #6ab0de;
+    --warning-title: rgba(130, 49, 47, 0.9);
+    --warning-content: #341312;
+    --info-title: #906b4b;
+    --info-content: #392a1e;
+    --note-title: #3f6985;
+    --note-content: #192a35;
+    --tip-title: rgba(46, 92, 46, 0.8);
+    --tip-content: #122412;
+}
+.notice.warning .notice-title {
+    background: var(--warning-title);
+}
