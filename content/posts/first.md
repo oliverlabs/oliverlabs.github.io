@@ -3,10 +3,7 @@ title: "First Blog Post"
 date: 2023-01-27T14:01:40+01:00
 draft: false
 tags:
-- Development
-- Go
-- fast
-- Blogging
+- General
 categories: 
 - Development
 ---
