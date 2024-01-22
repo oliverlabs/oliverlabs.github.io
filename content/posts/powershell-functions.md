@@ -6,26 +6,30 @@ tags:
 - PowerShell
 ---
 
-I thought I'd share some of the Powershell functions and aliases I've found useful over the years. I'll try to keep this updated as I find new ones.
+I thought I'd share some of the Powershell functions and aliases I've found useful over the years. I'll try to keep this post updated as I find new ones.
 
-# Powershell Aliases
+## Powershell Aliases
+
+Most of the aliases below are pretty self-explanatory. They are just shortcuts to common commands.
 
 ```powershell
-Set-Alias -Name "tf" -Value "terraform"
+Set-Alias -Name tf -Value terraform
 Set-Alias -Name k -Value kubectl
 Set-Alias -Name tt -Value tree
 Set-Alias -Name ll -Value ls
-Set-Alias g git
-Set-Alias vim nvim
+Set-Alias -Name g -Value git
+Set-Alias -Name vim -Value nvim
 Set-Alias -Name np -Value 'C:\Windows\notepad.exe'
 Set-Alias -Name code -Value code-insiders
 Set-Alias -Name npp -Value 'C:\Program Files\Notepad++\notepad++.exe'
 Set-Alias -Name buildnumber -Value "Get-OSBuild"
 ```
 
-# Powershell Functions
+## Powershell Functions
 
-## Command History
+This is where you can let go off your imagination and create some really cool functions. I'll share some of the ones I've found useful.
+
+### Command History
 
 I like having access to terminal history even after I close the terminal and reopen it later. So I wrote a function to do that. It uses PSReadLine plugin to query the history file and return the last 100 lines. I have this function aliased to `hist`.
 
@@ -36,35 +40,35 @@ function hist {
 }
 ```
 
-## Open GitHub Repo in a Browser
+### Open GitHub Repo in a Browser
 
 I use this function to open the current directory in a browser directly from the command line. I have this aliased to `gh`.
 
 ```powershell
-# This function opens a github repo in the browser
+# This function opens a GitHub repo in the browser
 function gitopen {
     start (git config --get remote.origin.url)
 }
 ```
 
-## Find Executable Path
+### Find Executable Path
 
 I use this function to find the path of an executable. It is nifty for finding the location of things like terraform or bicep. I have this aliased to `which`.
 
 ```powershell
 # This function finds executables
-
 function whereis ($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 ```
 
-## Create A New Directory And Change To It
+### Create A New Directory And Change To It
 
 I use this function to create a new directory and change to it with one short alias. I have this aliased to `mcd`.
 
 ```powershell
+# This function creates a new directory and changes to it
 function mcd {
     param (
         [Parameter(Mandatory = $true)]
@@ -76,17 +80,18 @@ function mcd {
 }
 ```
 
-## Get OS Build Number
+### Get OS Build Number
 
 I am an active Windows Insider user, so I check my Windows build numbers frequently. I use this function to get the OS build number. I have this aliased to `Get-OSBuild`.
 
 ```powershell
+# This function gets the OS build number
 function Get-OSBuild {
   (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name BuildLabEx).BuildLabEx.Split(".")[0]
 }
 ```
 
-## Lazy Git Commit
+### Lazy Git Commit
 
 I use this function to quickly commit changes to a git repo. I have this aliased to `acp`. ACP stands for Add, Commit, Push.
 
