@@ -6,6 +6,8 @@ tags:
 - Windows
 - Sudo
 - PowerShell
+cover:
+  image: /img/sudo.png
 ---
 
 Wow. Sudo for Windows is here! 
