@@ -1,7 +1,7 @@
 ---
 title: 'Sudo for Windows'
 date: '2024-02-09T10:59:09Z'
-draft: true
+draft: false
 tags:
 - Windows
 - Sudo
