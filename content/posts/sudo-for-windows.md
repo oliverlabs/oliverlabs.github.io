@@ -18,7 +18,7 @@ I gave it a try, and it seems to be doing what it says on the tin.
 
 Once enabled in Windows System Settings (_For Developers_ Section) like so:
 
-![Windows System Settings](/img/for-developers-settings2.png)
+![Windows System Settings](/img/for-developers-settings1.png)
 
 When elevating a process from the command-line with sudo, a UAC dialog will appear asking the user to confirm the elevation:
 
