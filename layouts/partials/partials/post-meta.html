@@ -39,4 +39,6 @@
   </span></span>
 {{- end }}
 
-{{- delimit . "&nbsp;·&nbsp;" -}}
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}} 
